@@ -39,7 +39,7 @@ Dir.entries(pages_directory).select{ |f| File.file? f }.each do |pageName|
         end
     end
 
-    IO.write(root_directory + '_' + pageName, lines.join("\n"))
+    IO.write(root_directory + '_' + pageName, lines.join())
 end
 
 
