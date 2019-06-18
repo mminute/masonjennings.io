@@ -51,6 +51,8 @@ class Navigation
                 page_to_links[@page_name.to_sym].each { |link|
                     lines.push(link_leading_whitespace + "<li><a href=\"#{link[:link]}\">#{link[:txt]}</a></li>\n")
                 }
+            else
+                lines.push(' ' * @leading_whitespace + _line)
             end
         end
     end
