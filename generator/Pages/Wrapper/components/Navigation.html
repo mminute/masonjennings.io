@@ -1,4 +1,4 @@
-<nav class="navbar navbar-custom navbar-transparent navbar-fixed-top" role="navigation">
+<nav class="{{ ClassNames }}" role="navigation">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
@@ -12,12 +12,7 @@
 
         <div class="collapse navbar-collapse" id="custom-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#my-languages">Languages</a></li>
-                <li><a href="#my-projects">Projects</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="interests.html">Interests</a></li>
+                {{ Links }}
             </ul>
         </div>
     </div>
