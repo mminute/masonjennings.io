@@ -17,6 +17,7 @@ class Navigation
     def page_to_links
         home = { link: 'index.html', txt: 'Home' }
         contact = { link: 'contact.html', txt: 'Contact' }
+        moreAboutMe = { link: 'moreAboutMe.html', txt: 'More About Me' }
 
         {
             'contact.html': [home],
@@ -27,7 +28,8 @@ class Navigation
                 { link: 'resume.html', txt: 'Resume' },
                 contact,
             ],
-            'more_about_me.html': [contact, home],
+            'moreAboutMe.html': [contact, home],
+            'podcasts.html': [contact, home, moreAboutMe],
             'resume.html': [contact, home],
             'thanks.html': [home],
         }

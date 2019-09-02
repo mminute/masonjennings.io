@@ -53,5 +53,5 @@ pages.each do |pageName|
         end
     end
 
-    IO.write(root_directory + '_' + pageName, lines.join())
+    IO.write(root_directory + pageName, lines.join())
 end
