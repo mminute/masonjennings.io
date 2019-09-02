@@ -1,4 +1,6 @@
 require_relative './ContentGenerators/Navigation'
+require_relative './ContentGenerators/MainContents'
+require_relative './getLeadingWhiteSpace'
 
 # Directories >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 root_directory = '/Users/mjennings/code/masonjennings.io/'
@@ -12,15 +14,10 @@ main_contents_regex = /(\s*)\{\{\sMainContents\s\}\}/
 nav_regex = /(\s*)\{\{\sNavigation\s\}\}/
 template_regex = /(\s*)\{\{\s(.*)\s\}\}/ # matches things like: Javascript.html, Footer.html
 
-# Utils >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-def getLeadingWhiteSpace(match)
-    match.captures[0].length
-end
-
 # Main function >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 wrapper_file = File.read(wrapper_directory + 'PageWrapper.html')
 
-pages = Dir.entries(pages_directory).select{ |f| File.file?(f) && !f.start_with?('.') }
+pages = Dir.entries(pages_directory).select{ |f| f.end_with?('.html') }
 
 pages.each do |pageName|
     lines = []
@@ -31,10 +28,11 @@ pages.each do |pageName|
         template_match = line.match(template_regex)
 
         if body_match
-            leading_whitespace = getLeadingWhiteSpace(body_match)
-            File.read(pages_directory + pageName).each_line do |body_contents_line|
-                lines.push(' ' * leading_whitespace + body_contents_line)
-            end
+            MainContents.new(
+                page_name: pageName,
+                leading_whitespace: getLeadingWhiteSpace(body_match),
+                directory: pages_directory,
+            ).generate(lines)
         elsif navigation_match
             Navigation.new(
                 page_name: pageName,

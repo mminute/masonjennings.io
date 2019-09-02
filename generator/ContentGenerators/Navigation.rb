@@ -26,9 +26,8 @@ class Navigation
                 { link: '#my-projects', txt: 'Projects' },
                 { link: 'resume.html', txt: 'Resume' },
                 contact,
-                { link: 'interests.html', txt: 'Interests' },
             ],
-            'interests.html': [],
+            'more_about_me.html': [contact, home],
             'resume.html': [contact, home],
             'thanks.html': [home],
         }
@@ -48,7 +47,7 @@ class Navigation
                 lines.push(' ' * @leading_whitespace + _line)
             elsif line.match(links_regex)
                 link_leading_whitespace = ' ' * (line.match(links_regex).captures[0].length + @leading_whitespace)
-                page_to_links[@page_name.to_sym].each { |link|
+                (page_to_links[@page_name.to_sym] || []).each { |link|
                     lines.push(link_leading_whitespace + "<li><a href=\"#{link[:link]}\">#{link[:txt]}</a></li>\n")
                 }
             else
