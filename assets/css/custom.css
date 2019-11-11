@@ -18,3 +18,17 @@ Place here your custom CSS styles
 #mason-pic {
   margin-top:-110px;
 }
+
+.black-background {
+    background-color: black;
+}
+
+.padded-y-2 {
+    padding: 0 2px 0 2px;
+}
+
+@media (min-width: 768px) {
+    .navbar-transparent .maybe-black-background {
+        background-color: black;
+    }
+}
