@@ -50,7 +50,7 @@ class Navigation
             elsif line.match(links_regex)
                 link_leading_whitespace = ' ' * (line.match(links_regex).captures[0].length + @leading_whitespace)
                 (page_to_links[@page_name.to_sym] || []).each { |link|
-                    lines.push(link_leading_whitespace + "<li><a href=\"#{link[:link]}\">#{link[:txt]}</a></li>\n")
+                    lines.push(link_leading_whitespace + "<li><a href=\"#{link[:link]}\"><div class=\"padded-y-2 maybe-black-background\">#{link[:txt]}</div></a></li>\n")
                 }
             else
                 lines.push(' ' * @leading_whitespace + _line)
