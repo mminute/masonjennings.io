@@ -2,6 +2,9 @@ require_relative './ContentGenerators/Navigation'
 require_relative './ContentGenerators/MainContents'
 require_relative './getLeadingWhiteSpace'
 
+# Example usage:
+# ruby generatePages.rb
+
 # Directories >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 root_directory = '/Users/mjennings/code/masonjennings.io/'
 pages_directory = root_directory + 'generator/Pages/'
