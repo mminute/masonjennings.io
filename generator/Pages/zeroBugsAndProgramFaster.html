@@ -1,0 +1,151 @@
+<div class="mainContents">
+    <section class="module">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="module-title font-alt">Zero Bugs and Program Faster by Kate Thompson</h2>
+
+                    <strong>Ch 2: Code that Doesn’t Leak</strong>
+                    <p>
+                        “If the design is so complicated that there are no obvious deficiencies, the deficiencies are hidden”
+                    </p>
+
+                    <strong>Ch 7: Know What Each Function Call Does</strong>
+                    <p>
+                        “API’s are one of the most common sources of programming bugs”
+                    </p>
+
+                    <strong>Ch 8: Reusable Code</strong>
+                    <p>
+                        If you want people to build on your code, it needs three things:
+                        <ol>
+                            <li>An obvious way to extend it</li>
+                            <li>An easy way to extend it</li>
+                            <li>A fast way to extend it</li>
+                        </ol>
+        
+                    </p>
+
+                    <strong>Ch 9: Cyclomatic Complexity</strong>
+                    <p>                    
+                        'Cyclomatic complexity’ … means ‘number of paths through code’<br/>
+                        When code is as simple as the problem you’re trying to solve, then you’ve succeeded. … Code can never be simpler thatn the problem it is trying to solve: that’s when you’ve done enough.
+                    </p>
+
+
+                    <strong>Ch 10: One Small Piece at a Time</strong>
+                    <p>
+                        Bob Martin developed three rules for unit tests…
+                        <ol>
+                            <li>You are not allowed to write any code unless it is to make a failing unit test pass.</li>
+                            <li>You are not allowed to write any more of a unit test than is sufficient to fail; and compilation failures are failures.</li>
+                            <li>You are not allowed to write any more code than is sufficient to pass the one failing unit test.</li>
+                        </ol>
+                    </p>
+
+
+                    <strong>Ch 12: Each Line Changed is a Chance for a Bug</strong>
+                    <p>
+                        If you want to be sure, you will need to test in multiple layers: code review, black-box testing, fuzz testing, white-box testing, unit-tests, functional tests, manual tests, formal verification, design verification, etc.  The more layers of testing, the fewer bugs.
+                            <ul>
+                                <li>Fuzz testing: providing invalid/unexpected/random inputs to a program</li>
+                                <li>White box testing: intern structure of a program is known to the tester</li>
+                            </ul>
+                        A simpler way to introduce unit tests to an old project is to only write them for code you need to change anyway…
+                    </p>
+
+
+                    <strong>Ch 13: The Team and Literate Programming</strong>
+                    <p>
+                        “The term Literate Programming means writing your program for a human to read”<br/>
+                        “... for a deep taste of literate programming, download cweb and play.”
+                    </p>
+
+
+                    <strong>Ch 19: Structural vs Real Code</strong>
+                    <p>
+                        Real code is code that actually does things: open a file, draw on the screen… Structural code connects things together. … minimize structural code as much as possible.
+                    </p>
+
+
+                    <strong>Ch 21: Use Data to Optimize and Win Arguments</strong>
+                    <p>
+                        When an argument goes on for a long time, it is usually because of a lack of data, or because neither side is right.<br/>
+                        If you haven’t timed your code before the change and after the change, you don’t know whether you’ve improved things or slowed them down.
+                    </p>
+
+
+                    <strong>Ch 22: Be Your Own Worst Enemy</strong>
+                    <p>
+                        A way to help examine your own ideas (and other people’s) is to recognize when you are proposing a hypothesis… If someone presents an idea without any evidence to back it up, it’s a hypothesis.
+                    </p>
+
+                    <strong>Ch 26: Points of Flexibility</strong>
+                    <p>
+                        Sometimes programmers create bugs by trying to fit every piece of code into a design pattern.  Instead of increasing flexibility, they decrease flexibility because the problem isn’t well defined, and isn’t a good match for the chosen design pattern.                        
+                    </p>
+
+                    <strong>Ch 27: Do it Later</strong>
+                    <p>
+                        Writing code before it needs to be written is poor management.<br/>
+                        Clean the things that have serious potential to cause problems, like poor interfaces, or doce that you are working on right now                        
+                    </p>
+
+                    <strong>Ch 29: Bad APIs Cause Bugs</strong>
+                    <p>
+                        Fixing mistakes, instead of starting over from scratch, is the way to learn.<br/>
+                        Any time we change a software standard, it’s an act of violence. It’s disruptive. It will cause stuff to fail.  It will cause cost and harm people                        
+                    </p>
+
+                    <strong>Ch 30: Lessons from Lisp</strong>
+                    <p>
+                        Control side effects
+                    </p>
+
+                    <strong>Ch 31: ACID</strong>
+                    <p>
+                        <ul>
+                            <li>
+                                Atomic- Actions succeed completely or fail completely
+                            </li>
+                            <li>
+                                Consistency- The system has rules and it will always follow those rules
+                            </li>
+                            <li>
+                                Isolation- If the system handles multiple threads, it remains consistent, as if each thread ran in isolation
+                            </li>
+                            <li>
+                                Durability- Once an operation is complete, it stays complete
+                            </li>
+                        </ul>
+
+                        Protected action- If something goes wrong the action can be reveresed<br/>
+                        Real actions cannot be reversed
+                    </p>
+
+                    <strong>Ch 34: Contracts, and When You are too Lazy for Proofs</strong>
+                    <p>
+                        An invariant is always true. … Invariants define what a class does, although the invariants might not be formally defined
+                    </p>
+
+                    <strong>Ch 38: Von Meuman</strong>                                        
+                    <p>
+                        TODO- Look up John von Neumann<br/>
+                        Book Richard Feynmann `QED: The Strange Theory of Light and Matter`
+                    </p>
+
+
+                    <strong>Ch 39: Gates</strong>
+                    <p>
+                        Priorities:
+                        <ol>
+                            <li>Take care of your customers first</li>
+                            <li>Second, take care of your employees</li>
+                            <li>Then take care of your stockholders</li>
+                        </ol>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
