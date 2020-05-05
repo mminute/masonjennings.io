@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>MasonJenningsIO</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">    
+        <!-- Bootstrap core CSS -->
+        <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Plugins -->
+        <link href="assets/css/simpletextrotator.css" rel="stylesheet">
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="assets/css/et-line-font.css" rel="stylesheet">
+        <link href="assets/css/magnific-popup.css" rel="stylesheet">
+        <link href="assets/css/flexslider.css" rel="stylesheet">
+        <link href="assets/css/animate.css" rel="stylesheet">
+        <!-- Template core CSS -->
+        <link href="assets/css/style.css" rel="stylesheet">
+        <!-- Custom css -->
+        <link href="assets/css/custom.css" rel="stylesheet">
+    </head>    <body>
+        <div class="page-loader">
+            <div class="loader">Loading...</div>
+        </div>
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html" style="display: flex; align-items: center">
+                        <div class="maybe-black-background" style="padding: 4px">
+                            Mason Jennings
+                        </div>
+                    </a>
+                </div>
+        
+                <div class="collapse navbar-collapse" id="custom-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                    </ul>
+                </div>
+            </div>
+        </nav>        <div class="wrapper">
+            <div class="mainContents">
+                <section class="module">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h2 class="module-title font-alt">Zero Bugs and Program Faster by Kate Thompson</h2>
+            
+                                <strong>Ch 2: Code that Doesn’t Leak</strong>
+                                <p>
+                                    “If the design is so complicated that there are no obvious deficiencies, the deficiencies are hidden”
+                                </p>
+            
+                                <strong>Ch 7: Know What Each Function Call Does</strong>
+                                <p>
+                                    “API’s are one of the most common sources of programming bugs”
+                                </p>
+            
+                                <strong>Ch 8: Reusable Code</strong>
+                                <p>
+                                    If you want people to build on your code, it needs three things:
+                                    <ol>
+                                        <li>An obvious way to extend it</li>
+                                        <li>An easy way to extend it</li>
+                                        <li>A fast way to extend it</li>
+                                    </ol>
+                    
+                                </p>
+            
+                                <strong>Ch 9: Cyclomatic Complexity</strong>
+                                <p>                    
+                                    'Cyclomatic complexity’ … means ‘number of paths through code’<br/>
+                                    When code is as simple as the problem you’re trying to solve, then you’ve succeeded. … Code can never be simpler thatn the problem it is trying to solve: that’s when you’ve done enough.
+                                </p>
+            
+            
+                                <strong>Ch 10: One Small Piece at a Time</strong>
+                                <p>
+                                    Bob Martin developed three rules for unit tests…
+                                    <ol>
+                                        <li>You are not allowed to write any code unless it is to make a failing unit test pass.</li>
+                                        <li>You are not allowed to write any more of a unit test than is sufficient to fail; and compilation failures are failures.</li>
+                                        <li>You are not allowed to write any more code than is sufficient to pass the one failing unit test.</li>
+                                    </ol>
+                                </p>
+            
+            
+                                <strong>Ch 12: Each Line Changed is a Chance for a Bug</strong>
+                                <p>
+                                    If you want to be sure, you will need to test in multiple layers: code review, black-box testing, fuzz testing, white-box testing, unit-tests, functional tests, manual tests, formal verification, design verification, etc.  The more layers of testing, the fewer bugs.
+                                        <ul>
+                                            <li>Fuzz testing: providing invalid/unexpected/random inputs to a program</li>
+                                            <li>White box testing: intern structure of a program is known to the tester</li>
+                                        </ul>
+                                    A simpler way to introduce unit tests to an old project is to only write them for code you need to change anyway…
+                                </p>
+            
+            
+                                <strong>Ch 13: The Team and Literate Programming</strong>
+                                <p>
+                                    “The term Literate Programming means writing your program for a human to read”<br/>
+                                    “... for a deep taste of literate programming, download cweb and play.”
+                                </p>
+            
+            
+                                <strong>Ch 19: Structural vs Real Code</strong>
+                                <p>
+                                    Real code is code that actually does things: open a file, draw on the screen… Structural code connects things together. … minimize structural code as much as possible.
+                                </p>
+            
+            
+                                <strong>Ch 21: Use Data to Optimize and Win Arguments</strong>
+                                <p>
+                                    When an argument goes on for a long time, it is usually because of a lack of data, or because neither side is right.<br/>
+                                    If you haven’t timed your code before the change and after the change, you don’t know whether you’ve improved things or slowed them down.
+                                </p>
+            
+            
+                                <strong>Ch 22: Be Your Own Worst Enemy</strong>
+                                <p>
+                                    A way to help examine your own ideas (and other people’s) is to recognize when you are proposing a hypothesis… If someone presents an idea without any evidence to back it up, it’s a hypothesis.
+                                </p>
+            
+                                <strong>Ch 26: Points of Flexibility</strong>
+                                <p>
+                                    Sometimes programmers create bugs by trying to fit every piece of code into a design pattern.  Instead of increasing flexibility, they decrease flexibility because the problem isn’t well defined, and isn’t a good match for the chosen design pattern.                        
+                                </p>
+            
+                                <strong>Ch 27: Do it Later</strong>
+                                <p>
+                                    Writing code before it needs to be written is poor management.<br/>
+                                    Clean the things that have serious potential to cause problems, like poor interfaces, or doce that you are working on right now                        
+                                </p>
+            
+                                <strong>Ch 29: Bad APIs Cause Bugs</strong>
+                                <p>
+                                    Fixing mistakes, instead of starting over from scratch, is the way to learn.<br/>
+                                    Any time we change a software standard, it’s an act of violence. It’s disruptive. It will cause stuff to fail.  It will cause cost and harm people                        
+                                </p>
+            
+                                <strong>Ch 30: Lessons from Lisp</strong>
+                                <p>
+                                    Control side effects
+                                </p>
+            
+                                <strong>Ch 31: ACID</strong>
+                                <p>
+                                    <ul>
+                                        <li>
+                                            Atomic- Actions succeed completely or fail completely
+                                        </li>
+                                        <li>
+                                            Consistency- The system has rules and it will always follow those rules
+                                        </li>
+                                        <li>
+                                            Isolation- If the system handles multiple threads, it remains consistent, as if each thread ran in isolation
+                                        </li>
+                                        <li>
+                                            Durability- Once an operation is complete, it stays complete
+                                        </li>
+                                    </ul>
+            
+                                    Protected action- If something goes wrong the action can be reveresed<br/>
+                                    Real actions cannot be reversed
+                                </p>
+            
+                                <strong>Ch 34: Contracts, and When You are too Lazy for Proofs</strong>
+                                <p>
+                                    An invariant is always true. … Invariants define what a class does, although the invariants might not be formally defined
+                                </p>
+            
+                                <strong>Ch 38: Von Meuman</strong>                                        
+                                <p>
+                                    TODO- Look up John von Neumann<br/>
+                                    Book Richard Feynmann `QED: The Strange Theory of Light and Matter`
+                                </p>
+            
+            
+                                <strong>Ch 39: Gates</strong>
+                                <p>
+                                    Priorities:
+                                    <ol>
+                                        <li>Take care of your customers first</li>
+                                        <li>Second, take care of your employees</li>
+                                        <li>Then take care of your stockholders</li>
+                                    </ol>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <p class="copyright font-inc m-b-0">© 2019 <a href="index.html">Mason Jennings</a>, All Rights Reserved.</p>    
+                        </div>
+                    </div>
+                </div>
+            </footer>        </div>
+        <div class="scroll-up">
+            <a href="#totop"><i class="fa fa-angle-double-up"></i></a>
+        </div>
+        <script src="assets/js/jquery-2.1.3.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.mb.YTPlayer.min.js"></script>
+        <script src="assets/js/appear.js"></script>
+        <script src="assets/js/jquery.simple-text-rotator.min.js"></script>
+        <script src="assets/js/jqBootstrapValidation.js"></script>
+        <script src="assets/js/isotope.pkgd.min.js"></script>
+        <script src="assets/js/imagesloaded.pkgd.js"></script>
+        <script src="assets/js/jquery.flexslider-min.js"></script>
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="assets/js/jquery.fitvids.js"></script>
+        <script src="assets/js/smoothscroll.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/custom.js"></script>    </body>
+</html>
